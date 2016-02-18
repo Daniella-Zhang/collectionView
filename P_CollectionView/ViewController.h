@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PRADataSource.h"
 
-@interface ViewController : UIViewController
+@interface PRAViewController : UICollectionViewController<UICollectionViewDataSource>
 
+@property (nonatomic,strong) IBOutlet PRADataSource *praDataSource;
 
 @end
 
