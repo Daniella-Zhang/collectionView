@@ -2,3 +2,7 @@
 CollectionView contains both supplymentary and nomal cell
 
 对象PRADataSource用来作为单独的Datasource，不使用代理，在storyboard中关联
+自定义layout，不采用流水布局：
+  layoutAttributesForItemAtIndexPath：和layoutAttributesForElementsInRect：一定要实现
+  layoutAttributesForElementsInRect：中，返回所有的attribute组成的数组，包括cell和supplymentary
+  
